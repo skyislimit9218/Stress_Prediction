@@ -58,8 +58,5 @@ pickle.dump(model,open(filename,'wb'))
 pickle.dump(cv, open("vectorizer.pickle", "wb"))
 
 loaded_model = pickle.load(open(filename, 'rb'))
-user = input("Enter a Text: ")
-data = cv.transform([user]).toarray()
-output = loaded_model.predict(data)
-print(output)
+
 
